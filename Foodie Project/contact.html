@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+     background-color: rgba(196, 14, 196, 0.37);
+    }
+    .main-item {
+        color: blue;
+    }
+    h1 {
+        text-align: center;
+    }
+    a {
+        margin: 30px;
+        padding: 10px;
+        color: red;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: green;
+    }
+    label {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    input {
+        margin: 10px;
+        padding: 10px;
+        width: 35%;
+        border: none;
+        border-radius: 10px;
+        background: black;
+        opacity: 0.5;
+        color: white;
+    }
+    #message {
+        margin: 20px;
+        padding: 10px;
+    }
+    a {
+        margin: 30px;
+    }
+    textarea {
+        background: black;
+        opacity: 0.5;
+        color: white;
+    }
+    button {
+        background-color: green;
+        color: lime;
+        padding: 10px;
+        border: none;
+        margin: 10px;
+        border-radius: 10px;
+
+    }
+    button:hover {
+        color: black;
+    }
+</style>
+<body>
+    <div class="main">
+        <h1 class="main-item">CONTACT US</h1>
+        <div class="names">
+            <label for="">Your Name*</label>
+            <br>
+            <input type="text" placeholder="Fullname">
+            <br>
+            <label for="">Email Address*</label>
+            <br>
+            <input type="text" name="email" placeholder="Eg. example@email.com">
+            <br>
+            <label for="">Phone Number*</label>
+            <br>
+            <input type="text">
+            <br>
+            <textarea name="text" id="message" cols="30" rows="10" placeholder="Please enter your comment"></textarea>
+            <br>
+            <button onClick="message()">SEND MESSAGE</button>
+        </div>
+        
+            <div>
+            <footer><a href="http://linkedin.com/in/sarah-adebayo-a52324204">LinkedIn</a>
+            <a href="http://www.facebook.com/sarah.tosin.37">Facebook</a>
+            <a href="https://twitter.com/PricelessFave/">Twitter</a>
+            <a href="https://codepen.io/Pricelesssarah">Codepen</a>
+            </footer>
+            </div>
+    </div>
+    <script>
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', ()=>{
+            alert('PLEASE FILL!!');
+        })
+    </script>
+</body>
+</html>

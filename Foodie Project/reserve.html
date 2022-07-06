@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 8px;
+        background-image: url('pizza.jpg');
+        background-size: cover;
+        z-index: 1;
+    }
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: black;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .list {
+        font-size: 20px;
+        color: rgb(139, 248, 243);
+    }
+    h2 {
+        color: white;
+        font-family: cursive;
+        letter-spacing: 7px;
+    }
+    label {
+        margin: 8px;
+        padding: 8px;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    input {
+        margin: 8px;
+        padding: 10px;
+        width: 40%;
+        border-radius: 6px;
+        border: 2px sol;
+        background: none;
+        color: white;
+    }
+    p {
+        font-size: 25px;
+        padding: 10px;
+    }
+    button {
+        padding: 15px;
+        margin: 8px;
+        background: green;
+        border: none;
+        color: white;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="reserve">
+        <div class="list">
+                <h2>Reserve Table</h2>
+                <p>Please fill the form below accurately to enable us serve you better!..welcome!</p>
+                <br>
+                <form action="" class="items">
+                <label for="name">First Name</label>
+                <br>
+                <input type="text" name="text" required>
+                <br>
+                <label for="name">Last Name</label>
+                <br>
+                <input type="text" required>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" placeholder="myname@example.com" required>
+                <br>
+                <label for="phone">Phone</label>
+                <br>
+                <input type="text" name="phone" required>
+                
+                <p>Reservation Type</p>
+                <select name="choose" id="">
+                    <option value="Birthday">Birthday</option>
+                    <option value="">Private</option>
+                    <option value="">Wedding</option>
+                    <option value="">Anniversary</option>
+                    <option value="">Holiday</option>
+                    <option value="">Corporate</option>
+                    <option value="">VIP</option>
+                    <option value="">Dinner</option>
+                    <option value="">Other</option>
+                </select>
+                <p>If Other above, please specify</p>
+                <input type="text">
+                <br>
+                <button onClick="mySubmit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('button');
+
+    btn.addEventListener('click', mySubmit);
+
+    function mySubmit(){
+        alert('PLEASE WAIT!! Processing Order');
+    }
+</script>
+</html>
